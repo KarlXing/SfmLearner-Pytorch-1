@@ -197,8 +197,8 @@ def main():
         error_string = ', '.join('{} : {:.3f}'.format(name, error) for name, error in zip(error_names[2:9], errors[2:9]))
         #logger.valid_writer.write(' * Avg {}'.format(error_string))
 
-    for epoch in tqdm(range(args.epochs)):
-        #print("{} epochs are done".format(epoch))
+    for epoch in range(args.epochs):
+        print("{} epochs are done".format(epoch))
         #logger.epoch_bar.update(epoch)
 
         # train for one epoch
